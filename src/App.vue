@@ -1,26 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="min-h-screen">
+    <h1 class="text-center text-7xl mb-8 mt-8">DIVA WORK INDEX</h1>
+    <WorkThumbnail />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WorkThumbnail from '@/components/WorkThumbnail.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    WorkThumbnail
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

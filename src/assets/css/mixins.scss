@@ -1,0 +1,38 @@
+// variables
+//==========
+$color-white: #F2F2F2;
+$color-black: #2b2b2b;
+$color-red:#bd2015;
+$color-link: #ffffff;
+$color-hover: #ffffff;
+$color-text: #ffffff;
+$color-background: #0d1226;
+$SansFont: Helvetica Neue,Helvetica,Arial,sans-serif;
+
+
+// mixins
+//======
+@mixin for-phone-only {
+	@media (max-width: 640px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+	@media (min-width: 640px) { @content; }
+}
+@mixin for-tablet-portrait-only {
+	@media (min-width: 640px) and (max-width: 959px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+	@media (min-width: 960px) { @content; }
+}
+@mixin for-tablet-landscape-only {
+	@media (min-width: 960px) and (max-width: 1279px) { @content; }
+}
+@mixin for-desktop-up {
+	@media (min-width: 1280px) { @content; }
+}
+@mixin for-desktop-only {
+	@media (min-width: 1280px) and (max-width: 1799px) { @content; }
+}
+@mixin for-large-desktop-only {
+	@media (min-width: 1800px) { @content; }
+}

@@ -1,0 +1,97 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './mixins.scss';
+
+@font-face {
+    font-family: 'Favorit';
+    src:
+        url('../fonts/Favorit/FavoritPro-Regular.woff2') format('woff2'), url('../fonts/Favorit/FavoritPro-Regular.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Favorit';
+    src: url('../fonts/Favorit/FavoritPro-Italic.woff2') format('woff2'), url('../fonts/Favorit/FavoritPro-Italic.woff') format('woff');
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Favorit';
+    src: url('../fonts/Favorit/FavoritPro-Medium.woff2') format('woff2'), url('../fonts/Favorit/FavoritPro-Medium.woff') format('woff');
+    font-weight: medium;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Favorit';
+    src: url('../fonts/Favorit/FavoritPro-Light.woff2') format('woff2'), url('../fonts/Favorit/FavoritPro-Light.woff') format('woff');
+    font-weight: light;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Favorit';
+    src: url('../fonts/Favorit/FavoritPro-Book.woff2') format('woff2'), url('../fonts/Favorit/FavoritPro-Book.woff') format('woff');
+    font-weight: book;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Favorit';
+    src: url('../fonts/Favorit/FavoritPro-Bold.woff2') format('woff2'), url('../fonts/Favorit/FavoritPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Favorit';
+    src: url('../fonts/Favorit/FavoritPro-BoldItalic.woff2') format('woff2'), url('../fonts/Favorit/FavoritPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Druk';
+    src: url('../fonts/Druk/Druk-Medium-Web.woff2') format('woff2'), url('../fonts/Druk/Druk-Medium-Web.woff') format('woff');
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'Druk';
+    src: url('../fonts/Druk/Druk-Bold-Web.woff2') format('woff2'), url('../fonts/Druk/Druk-Bold-Web.woff') format('woff');
+    font-weight: bold;
+}
+
+body {
+    background: $color-background;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a {
+    color: $color-white;
+}
+
+h1,
+h2 {
+    font-family: druk;
+    color: $color-white;
+}
+
+h2 {
+    // letter-spacing: 2px;
+    font-family: Favorit;
+}
+
+h3 {
+    font-family: Favorit;
+}
+
+p,
+li,
+a {
+    font-family: Favorit;
+    color: $color-white;
+}
+
+.menu-title {
+    font-family: druk;
+}

@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="min-h-screen">
-    <h1 class="text-center text-7xl mb-8 mt-8">DIVA WORK INDEX</h1>
+    <h1 class="text-center text-7xl mb-8 mt-8">WORK INDEX</h1>
     <WorkThumbnail />
   </div>
 </template>
